@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4cd01450.chunk.css",
-    "main.js": "/static/js/main.c1a967a7.chunk.js",
-    "main.js.map": "/static/js/main.c1a967a7.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a44a8066.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a44a8066.js.map",
-    "static/js/2.23bd4ef3.chunk.js": "/static/js/2.23bd4ef3.chunk.js",
-    "static/js/2.23bd4ef3.chunk.js.map": "/static/js/2.23bd4ef3.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.4cd01450.chunk.css.map": "/static/css/main.4cd01450.chunk.css.map",
-    "static/js/2.23bd4ef3.chunk.js.LICENSE.txt": "/static/js/2.23bd4ef3.chunk.js.LICENSE.txt",
-    "static/media/title.f72ba448.png": "/static/media/title.f72ba448.png"
+    "main.css": "/GamePricesApp/static/css/main.4cd01450.chunk.css",
+    "main.js": "/GamePricesApp/static/js/main.c1a967a7.chunk.js",
+    "main.js.map": "/GamePricesApp/static/js/main.c1a967a7.chunk.js.map",
+    "runtime-main.js": "/GamePricesApp/static/js/runtime-main.cb172cb0.js",
+    "runtime-main.js.map": "/GamePricesApp/static/js/runtime-main.cb172cb0.js.map",
+    "static/js/2.23bd4ef3.chunk.js": "/GamePricesApp/static/js/2.23bd4ef3.chunk.js",
+    "static/js/2.23bd4ef3.chunk.js.map": "/GamePricesApp/static/js/2.23bd4ef3.chunk.js.map",
+    "index.html": "/GamePricesApp/index.html",
+    "static/css/main.4cd01450.chunk.css.map": "/GamePricesApp/static/css/main.4cd01450.chunk.css.map",
+    "static/js/2.23bd4ef3.chunk.js.LICENSE.txt": "/GamePricesApp/static/js/2.23bd4ef3.chunk.js.LICENSE.txt",
+    "static/media/title.f72ba448.png": "/GamePricesApp/static/media/title.f72ba448.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a44a8066.js",
+    "static/js/runtime-main.cb172cb0.js",
     "static/js/2.23bd4ef3.chunk.js",
     "static/css/main.4cd01450.chunk.css",
     "static/js/main.c1a967a7.chunk.js"
