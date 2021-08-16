@@ -5,7 +5,7 @@ export const useFetchAPI = (setData, filter) => {
     useEffect(() => {
         setData([])
 
-        const gameInfo = fetchAPI()
+        const gameInfo = fetchAPI(filter)
         gameInfo.then(game => {
             setData(game);
         })
@@ -14,9 +14,9 @@ export const useFetchAPI = (setData, filter) => {
     
 }
 
-const fetchAPI = async () => {
+const fetchAPI = async (filter) => {
     let game = [];
-    const resp = await fetch("https://www.cheapshark.com/api/1.0/deals");
+    const resp = await fetch(`https://www.cheapshark.com/api/1.0/deals?sortBy=${encodeURI(filter)}`);
     const data = await resp.json();
     for (let i = 0; i <= 5; i++){
         game.push({

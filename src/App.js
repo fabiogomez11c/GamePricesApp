@@ -3,6 +3,7 @@ import {Card} from './components/Card'
 import title from './assets/title.png'
 import { useFetchAPI } from './helpers/useFetchAPI'
 import { useState } from 'react'
+import { Filter } from './components/Filter'
 
 export const App = () => {
 
@@ -21,7 +22,7 @@ export const App = () => {
     }
 
     const [data, setData] = useState(defState);
-    const [filter, setFilter] = useState([]);
+    const [filter, setFilter] = useState("Deal Rating");
 
     // fetch data from the api
     useFetchAPI(setData, filter);
@@ -32,7 +33,7 @@ export const App = () => {
                 <img className="title__text" src={title} alt="title"/>
             </section>
             <section className="filter">
-
+                <Filter setFilter={setFilter}/>
             </section>
             <section className="game">
                 {
