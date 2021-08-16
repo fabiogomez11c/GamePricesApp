@@ -11,7 +11,7 @@ export const App = () => {
             <section className="filter">
 
             </section>
-            <section className="games">
+            <section className="game">
                 <Card />
                 <Card />
                 <Card />
