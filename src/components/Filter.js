@@ -10,14 +10,11 @@ export const Filter = ({setFilter}) => {
                 <button className="filter__btn" onClick={() => {setFilter("Deal Rating");setActivated(false);}}>
                     Deal Rating
                 </button>
-                <button className="filter__btn" onClick={() => {setFilter("Title");setActivated(false);}}>
-                    Title
+                <button className="filter__btn" onClick={() => {setFilter("Price");setActivated(false);}}>
+                    Price
                 </button>
                 <button className="filter__btn" onClick={() => {setFilter("Savings");setActivated(false);}}>
                     Savings
-                </button>
-                <button className="filter__btn" onClick={() => {setFilter("Metacritic");setActivated(false);}}>
-                    Metacritic
                 </button>
             </div>
         )

@@ -1,7 +1,6 @@
 :root {
     --main_dark: #190061;
     --card-bk: #240090;
-    --card-effect: linear-gradient(235deg, #3500d3, #01061540, #3500d3)
 }
 
 * {
@@ -151,4 +150,34 @@ main {
     font-weight: bold;
 }
 
+.filter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+.filter__section {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter__btn {
+    margin: 0px 10px;
+    width: 90px;
+    height: 25px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    background: white;
+    color: var(--main_dark);
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s;
+}
+
+.filter__btn:hover {
+    background: var(--card-bk);
+    color: white;
+}
