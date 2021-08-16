@@ -1,17 +1,21 @@
 import React from 'react'
 
-export const Card = ({title, salePrice, image}) => {
+export const Card = ({info}) => {
+    const metaLink = "https://www.metacritic.com"
     return (
         <div className="game__card">
-            {/* <img className="game__image" alt="game__image" src="https://cdn.cloudflare.steamstatic.com/steam/apps/290300/capsule_sm_120.jpg?t=1586291149"/> */}
-            <img className="game__image" alt="game__image" src={image}/>
-            <h2 className="card__title">{title}</h2>
+            <img className="game__image" alt="game__image" src={info && info.image}/>
+            <h2 className="card__title">{info && info.title}</h2>
             <span className="deal">
-                <p className="deal__info">{`Deal: $${salePrice}`}</p>
-                <p className="deal__info deal__info--offer">Deal: $40.00</p>
+                <p className="deal__info">{`Deal: $${info && info.salePrice}`}</p>
+                <p className="deal__info deal__info--offer">{`Before: $${info && info.normalPrice}`}</p>
             </span>
             <span className="review">
-                {/* <a href="#" className="review__button">Check the reviews</a> */}
+                {
+                    info && info.metacritic !== null
+                    ? <a href={metaLink + info.metacritic} className="review__button">Check the reviews</a>
+                    : <p className="review__button">There isn't a review</p>
+                }
             </span>
         </div>
     )

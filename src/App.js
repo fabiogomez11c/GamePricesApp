@@ -1,13 +1,30 @@
 import React from 'react'
 import {Card} from './components/Card'
 import title from './assets/title.png'
-import { fetchAPI } from './helpers/fetchAPI'
+import { useFetchAPI } from './helpers/useFetchAPI'
+import { useState } from 'react'
 
 export const App = () => {
 
+    const defData = {
+        title       : "",
+        image       : "",
+        normalPrice : "",
+        salePrice   : "",
+        savings     : "",
+        metacritic  : ""
+    }
+
+    let defState = []
+    for (let i = 0; i < 5; i++){
+        defState.push(defData)
+    }
+
+    const [data, setData] = useState(defState);
+    const [filter, setFilter] = useState([]);
+
     // fetch data from the api
-    const gamesData = fetchAPI();
-    console.log(gamesData[0])
+    useFetchAPI(setData, filter);
 
     return (
         <main>
@@ -18,12 +35,11 @@ export const App = () => {
 
             </section>
             <section className="game">
-                <Card info={gamesData[0]}/>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                {
+                    data.map((value, idx) => {
+                        return <Card info={value} key={idx}/>
+                    })
+                }
             </section>
         </main>
     )
