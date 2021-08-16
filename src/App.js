@@ -1,8 +1,14 @@
 import React from 'react'
 import {Card} from './components/Card'
 import title from './assets/title.png'
+import { fetchAPI } from './helpers/fetchAPI'
 
 export const App = () => {
+
+    // fetch data from the api
+    const gamesData = fetchAPI();
+    console.log(gamesData[0])
+
     return (
         <main>
             <section className="title">
@@ -12,7 +18,7 @@ export const App = () => {
 
             </section>
             <section className="game">
-                <Card />
+                <Card info={gamesData[0]}/>
                 <Card />
                 <Card />
                 <Card />
